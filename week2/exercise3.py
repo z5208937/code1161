@@ -7,7 +7,11 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    pass
+    if a_number % 2 == 0:
+        return False
+    else:
+        if a_number % 2 == 1:
+            return True
 
 
 def fix_it(moves=True, should_move=True):
@@ -21,7 +25,20 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
+    if moves == True:
+        if should_move == True:
+            return "No Problem"
+        else: 
+            if should_move != True:
+                return "Duct Tape"
+    else:
+        if moves != True: 
+            if should_move == True:
+                return "WD-40"
+            else:
+                if should_move != True:
+                    return "No Problem"
+     
 
 
 def loops_1a():
@@ -31,9 +48,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    pass
-
-
+    stars = []
+    for x in range(0,10):
+        stars.append("*")
+    return stars
 
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
@@ -43,8 +61,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
-
+    sharp = []
+    for x in range(number_of_items):
+        sharp.append(symbol)
+    return sharp
 
 def loops_2():
     """Make a big square starfield.
@@ -64,8 +84,12 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    pass
-
+    starfield = []
+    star = []
+    for x in range(10):
+        starfield.append('*')
+        star.append(starfield)
+    return star
 
 def loops_3():
     """Make a rising block of numbers.
@@ -88,7 +112,14 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
+    loops_3 = []
+    for x in range(10):
+        loops_3a = []
+        for z in range (10):
+            loops_3a.append(str(x))
+        loops_3.append(loops_3a)
+    return loops_3
+    
 
 
 def loops_4():
@@ -108,8 +139,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
-
+    loops_4 = []
+    for x in range(10):
+        loops_4a = []
+        for z in range(10):
+            loops_4a.append(str(z))
+        loops_4.append(loops_4a)
+    return loops_4    
 
 def loops_5():
     """Make the coordinates of the block.
@@ -133,8 +169,13 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
-
+    loops_5 = []
+    for x in range(10):
+        loops_5a = []
+        for y in range(5):
+            loops_5a.append('(i' + str(x) + ', j' + str(y) + ')')
+        loops_5.append(loops_5a)
+    return loops_5
 
 def loops_6():
     """Make a wedge of numbers.
@@ -156,7 +197,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    loops_6 = []
+    for x in range(10):
+        loops_6a = []
+        for z in range(x + 1):
+            loops_6a.append(str(z))
+        loops_6.append(loops_6a)
+    return loops_6
 
 
 def loops_7():
@@ -180,7 +227,16 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
+    loops_7 = []
+    for x in range(5):
+        loops_7a = []
+        for z in range(9):
+            if abs(z-4) <= x:
+                loops_7a.append('*')
+            else:
+                loops_7a.append(" ")
+        loops_7.append(loops_7a)
+    return loops_7
 
 
 def lp(some_kind_of_list, exercise_name):
