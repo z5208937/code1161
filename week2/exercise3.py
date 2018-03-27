@@ -234,7 +234,7 @@ def loops_7():
             if abs(z-4) <= x:
                 loops_7a.append('*')
             else:
-                loops_7a.append(" ")
+                loops_7a.append(' ')
         loops_7.append(loops_7a)
     return loops_7
 

@@ -13,7 +13,7 @@ def add_5(a_number):
         return a_number plus five
     except expressed in python, not english
     """
-    pass
+    return a_number + 5
 
 
 def adder(a_number, another_number):
@@ -21,7 +21,7 @@ def adder(a_number, another_number):
 
     Same as above, but with any two numbers.
     """
-    pass
+    return a_number + another_number
 
 
 def shout(a_string):
@@ -32,7 +32,7 @@ def shout(a_string):
     or in any of the million places that google will give you.
     "python make a string uppercase" is a good starting search query.
     """
-    pass
+
 
 
 def really_shout(a_string):
